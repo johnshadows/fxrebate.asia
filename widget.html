@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+     </script>
+    <div class="global">
+        <div><span>Choose your broker</span></div> 
+            <div class="broker_cal">
+                <select name="" id="cal_broker">
+                    <option value="1">XM</option>
+                    <option value="2">Exness</option>
+                    <option value="3">ICMarket</option>
+                    <option value="4">Peperstone</option>
+                    <option value="5">Fxprimus</option>
+                    <option value="6">FBS</option>
+                </select>
+            </div>
+        <div><span>Choose currency pair</span></div>
+            <div class="symbol_select">
+                <select name="" id="cal_symbol">
+                    <option value="11">EUR/USD</option>
+                    <option value="12">USD/JPY</option>
+                    <option value="13">XAU/USD</option>
+                    <option value="14">GBPUSD</option>
+                    <option value="15">AUD/USD</option>
+                    <option value="16">GBP/JPY</option>
+                </select>
+            </div>
+            <div><span>trade volume (lots)</span></div>
+            <div class="lot_cal">
+                <input id="lot" type="text" >
+            </div>
+            <div class="text-result">
+                    <span>Your rebates</span>
+            </div>
+            
+            <div class="result">$0.00</div>
+        </div>
+        
+    
+
+<style>
+.global{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #434343;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 7px;
+
+}
+.global select{
+    width: 100%;
+}
+.global input{
+    width: 100%;
+}
+.result{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.text-result{
+    text-align: center;
+}
+
+</style>
+
+
+
+
+
+
+
+<!--    js   
+
+
+    <script>
+    jQuery(document).ready(function($){
+
+        $("#cal_broker").change(cal);
+       $("#cal_symbol").change(cal);
+       $("#lot").keyup(cal);
+	
+    var cal = function(){
+            var broker = $( "#cal_broker" ).val();
+             var sym = $("#cal_symbol").val();
+             var lot = $("#lot").val();
+             var res = 0;
+                   switch(sym) {
+                       case '11': sym = 10; break;
+                       case '12': sym = 10; break;
+                       case '13': sym = 20; break;
+                       case '14': sym = 12; break;
+                       case '15': sym = 10; break;
+                       case '16': sym = 32; break;
+                   }  
+
+               switch(broker) {
+                       case '1': broker = 9.3; break;
+                       case '2': broker = 3.7; break;
+                       case '3': broker = 3.8; break;
+                       case '4': broker = 3.8; break;
+                       case '5': broker = 9.3; break;
+                       case '6': broker = 14; break;
+                   }
+
+               if(broker == 3.7 )
+               {
+                   res = sym * lot * 0.35 ;
+               }else{
+                   res = broker * lot;
+               }
+
+             $("div.result").html( "$"+ res.toFixed(2) );
+
+           };
+
+    }		   
+);
+    </script>           -->
+
+    <script>
+     
+    jQuery(document).ready(function($){
+
+        $("#cal_broker").change(cal);
+       $("#cal_symbol").change(cal);
+       $("#lot").keyup(cal);
+	
+   
+
+    }		   
+);
+
+ var cal = function(){
+            var broker = $( "#cal_broker" ).val();
+             var sym = $("#cal_symbol").val();
+             var lot = $("#lot").val();
+             var res = 0;
+                   switch(sym) {
+                       case '11': sym = 10; break;
+                       case '12': sym = 10; break;
+                       case '13': sym = 20; break;
+                       case '14': sym = 12; break;
+                       case '15': sym = 10; break;
+                       case '16': sym = 32; break;
+                   }  
+
+               switch(broker) {
+                       case '1': broker = 9.3; break;
+                       case '2': broker = 3.7; break;
+                       case '3': broker = 3.8; break;
+                       case '4': broker = 3.8; break;
+                       case '5': broker = 9.3; break;
+                       case '6': broker = 14; break;
+                   }
+
+               if(broker == 3.7 )
+               {
+                   res = sym * lot * 0.35 ;
+               }else{
+                   res = broker * lot;
+               }
+
+             $("div.result").html( "$"+ res.toFixed(2) );
+
+           };
+    
+    </script>
+
+
+</body>

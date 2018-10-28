@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+     </script>
+    <div class="global">
+    <form action="" id="call">
+        <div><span>เลือกโบรกเกอร์</span></div> 
+            <div class="broker_cal">
+                <select name="" id="cal_broker">
+                    <option value="1">XM</option>
+                    <option value="2">Exness</option>
+                    <option value="3">ICMarket</option>
+                    <option value="4">Peperstone</option>
+                    <option value="5">Fxprimus</option>
+                    <option value="6">FBS</option>
+                </select>
+            </div>
+        <div><span>เลือกคู่เงิน</span></div>
+            <div class="symbol_select">
+                <select name="" id="cal_symbol">
+                    <option value="11">EUR/USD</option>
+                    <option value="12">USD/JPY</option>
+                    <option value="13">XAU/USD</option>
+                    <option value="14">GBPUSD</option>
+                    <option value="15">AUD/USD</option>
+                    <option value="16">GBP/JPY</option>
+                </select>
+            </div>
+            <div><span>จำนวน Lot</span></div>
+            <div class="lot_cal">
+                <input id="lot" type="text" >
+            </div>
+        </div>
+    </form>
+        <span>เงินที่พวกมึงจะได้</span>
+        <P></P>
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+    </div>
+       
+
+<style>
+    table{
+        border-spacing: 0;
+    }
+    tbody{
+        border-collapse: collapse;
+    }
+    th{
+        font-size: 16px;
+        color: #434343;
+        background-color: #f8f8f8;
+        padding: 5px 0px 5px 20px;
+        border-right: 1px solid #dddddd;
+      }
+</style>
+        <div class="broker-box">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Broker</th>
+                        <th>Rebate Rate</th>
+                        <th>Details</th>
+                        <th>General Information</th>
+                    </tr>
+                    <tr><td><a href=""><div class="name_broker">
+                        <span>XM</span>
+                    </div>
+                <img src="class_xm.png" alt=""></a></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+            
+
+</body>
+</html>
+
+
+
